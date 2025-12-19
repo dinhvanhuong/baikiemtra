@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <?php
-echo "<h1>1M1-CUỐIKY-DINHVANHUONG</h1>"; // Bạn có thể thêm MSSV vào đây nếu cần
+echo "<h1>1M1-CUỐIKY-DINHVANHUONG</h1>";
 
 $host = 'db';
 $user = 'root';
