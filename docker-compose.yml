@@ -1,16 +1,17 @@
-version: '3'
 services:
   web:
-    image: webdevops/php-apache:5.6
+    build: .
     ports:
       - "8088:80"
     volumes:
-      - .:/app
-    environment:
-      - WEB_DOCUMENT_ROOT=/app
+      - .:/var/www/html
     links:
       - db
   db:
     image: mysql:5.7
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: "quanly_sv"
+    volumes:
+      # Ánh xạ file sql để tự động tạo database khi khởi động
+      - ./db.sql:/docker-entrypoint-initdb.d/db.sql

@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <?php
-echo "<h1>1M1-CUỐIKY-DINHVANHUONG</h1>";
+echo "<h1>PM1-CUỐIKY-DINHVANHUONG</h1>";
 
 $host = 'db';
 $user = 'root';
